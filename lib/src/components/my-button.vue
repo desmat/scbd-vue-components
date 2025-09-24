@@ -6,6 +6,8 @@ export type MyButtonMessage = 'Hello' | 'Allo' | 'Hola';
   setup
   lang="ts"
 >
+import { CButton } from '@coreui/vue'
+
 const props = withDefaults(defineProps<{
   msg?: MyButtonMessage,
 }>(), 
@@ -15,28 +17,24 @@ const props = withDefaults(defineProps<{
 </script>
 
 <template>
-  <button>
-    <img
-      src="../assets/vue.svg"
-      class="logo vue"
-    /><img
-      src="../assets/vite.svg"
-      class="logo vite"
-    />
-    {{ msg }}
-  </button>
+  <CButton
+    color="primary"
+    variant="outline"
+    class="d-flex align-items-center gap-[0.5rem]"
+  >
+      <img
+        src="../assets/vue.svg"
+        class="logo vue"
+      />
+      <img
+        src="../assets/vite.svg"
+        class="logo vite"
+      />
+      {{ msg }}
+  </CButton>
 </template>
 
 <style scoped>
-button {
-  background: lightgrey;
-  border: solid 0.5px grey;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: row;
-  gap: 0.25rem;
-  padding: 0.25rem 1rem;
-}
 .logo {
   height: 0.75rem;
   width: 0.75rem;
@@ -49,5 +47,5 @@ button:hover .logo.vite {
 }
 button:hover .logo.vue {
   display: none;
-}
+}  
 </style>

@@ -32,6 +32,37 @@
   resolved "https://registry.yarnpkg.com/@bufbuild/protobuf/-/protobuf-2.9.0.tgz#ff8827be3d8e56d74a03530cff8b0e1952aa115e"
   integrity sha512-rnJenoStJ8nvmt9Gzye8nkYd6V22xUAnu4086ER7h1zJ508vStko4pMvDeQ446ilDTFpV5wnoc5YS7XvMwwMqA==
 
+"@coreui/coreui@^5.2.0", "@coreui/coreui@^5.4.3":
+  version "5.4.3"
+  resolved "https://registry.yarnpkg.com/@coreui/coreui/-/coreui-5.4.3.tgz#af9d88cef7430d9324c715906e685cce6b4eee9b"
+  integrity sha512-Tj+3LOcr4Qf2fGL/xDull+Q0d6+t3c/4HtxDtb+j964YOJjki4wqHxam+hQoemqnf2p1tLQ4nmoUjiFwA9FZBg==
+  dependencies:
+    html-entities "^2.6.0"
+    html-to-md "^0.8.8"
+
+"@coreui/icons-vue@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@coreui/icons-vue/-/icons-vue-2.2.0.tgz#222e33667b1d26e46db79fa3a3c2b4f445c0601f"
+  integrity sha512-FUQw/4/OprUkfSgtraJfdJqXIRj3Ey18nm5LQrfsJNMYTLjU+P5QzpljiSu9F3P/YPlX/sTWY/6ok71SmODtHw==
+
+"@coreui/icons@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@coreui/icons/-/icons-3.0.1.tgz#a6b77a3d3578a59b08474fbfe29de0ebc5ea4c80"
+  integrity sha512-u9UKEcRMyY9pa4jUoLij8pAR03g5g6TLWV33/Mx2ix8sffyi0eO4fLV8DSTQljDCw938zt7KYog5cVKEAJUxxg==
+
+"@coreui/utils@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@coreui/utils/-/utils-2.0.2.tgz#67828ead4ec857a0dfd644e6ffacd85b6f7cd2ba"
+  integrity sha512-tIFmyKzR96vSD3vqtw4H/4rH/Pctghj+Rp9kWncx1ec2vstC+yphcEUmMk/r+Mm86/Tradi0SIcuCaqvhkyqJA==
+
+"@coreui/vue@^5.4.1":
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/@coreui/vue/-/vue-5.7.0.tgz#152ce7445c36c5f5a26d4793f114adeaf02cc72b"
+  integrity sha512-YVwVk5A/87f0SgGhpwNdX87Tm1r1Ti2Ygh0QV6bBhjMntsWZZyHs24fCC2QneiZ5IQK0Dq1JsHcfCCJtzv2IXg==
+  dependencies:
+    "@coreui/coreui" "^5.4.3"
+    "@popperjs/core" "^2.11.8"
+
 "@esbuild/aix-ppc64@0.21.5":
   version "0.21.5"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.21.5.tgz#c7184a326533fcdf1b8ee0733e21c713b975575f"
@@ -240,6 +271,11 @@
     "@parcel/watcher-win32-arm64" "2.5.1"
     "@parcel/watcher-win32-ia32" "2.5.1"
     "@parcel/watcher-win32-x64" "2.5.1"
+
+"@popperjs/core@^2.11.8":
+  version "2.11.8"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
+  integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
 "@rollup/rollup-android-arm-eabi@4.52.2":
   version "4.52.2"
@@ -600,6 +636,16 @@ he@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+
+html-entities@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-2.6.0.tgz#7c64f1ea3b36818ccae3d3fb48b6974208e984f8"
+  integrity sha512-kig+rMn/QOVRvr7c86gQ8lWXq+Hkv6CbAH1hLu+RG338StTpE8Z0b44SDVaqVu7HGKf27frdmUYEs9hTUX/cLQ==
+
+html-to-md@^0.8.8:
+  version "0.8.8"
+  resolved "https://registry.yarnpkg.com/html-to-md/-/html-to-md-0.8.8.tgz#50e589dd8dcf26c3ccfdb294be5ab2e20409e459"
+  integrity sha512-lgK3KKagobOguNi1XOfNaTtFSsjySir1CPfzewzVUjFM4x0RASnyZu47Hoe9nStpWFwpOwIrdxXzhxLIRbWllQ==
 
 immutable@^5.0.2:
   version "5.1.3"

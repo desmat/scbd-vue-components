@@ -25,9 +25,19 @@
     "clean": "rm -rf ./dist && rm -rf ./dist-types"
   },
   "peerDependencies": {
+    "@coreui/coreui": "^5.2.0",
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-vue": "^2.2.0",
+    "@coreui/utils": "^2.0.2",
+    "@coreui/vue": "^5.4.1",
     "vue": "^3.4.21"
   },
   "devDependencies": {
+    "@coreui/coreui": "^5.2.0",
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-vue": "^2.2.0",
+    "@coreui/utils": "^2.0.2",
+    "@coreui/vue": "^5.4.1",
     "@vitejs/plugin-vue": "^5.0.4",
     "sass-embedded": "^1.93.2",
     "typescript": "^5.2.2",
