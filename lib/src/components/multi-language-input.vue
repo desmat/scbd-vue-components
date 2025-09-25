@@ -7,7 +7,7 @@
     >
       <div
         class="multi-language-container"
-        v-for="(lang, index) in Languages"
+        v-for="(lang, index) in languages"
       >
         <div v-if="expanded || index == 0">
           <CInputGroup>
@@ -76,6 +76,7 @@ import { cilChevronBottom, cilChevronTop } from '@coreui/icons'
 import { computed, ref } from 'vue'
 import FormInputWrapper from './form-input-wrapper.vue'
 import { Languages } from '../data/un-languages';
+import type { Language } from '../data/un-languages';
 import type LString from '../types/lstring';
 
 const props = withDefaults(defineProps<{
@@ -85,8 +86,11 @@ const props = withDefaults(defineProps<{
   rows?: number,
   valid?: { [locale: string]: boolean },
   feedbackInvalid?: string,
+  languages?: Language[],
 }>(), {
   rows: 2,
+  // @ts-ignore why?
+  languages: Languages,
 });
 
 const [model, modifiers] = defineModel<LString>();

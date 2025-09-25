@@ -1,4 +1,4 @@
-interface Language {
+export interface Language {
     locale: string,
     name: string,
     direction: "ltr" | "rtl"
@@ -11,7 +11,7 @@ export const Arabic: Language = { locale: "ar", name: "العربية", directio
 export const Russian: Language = { locale: "ru", name: "Русский", direction: "ltr" };
 export const Chinese: Language = { locale: "zh", name: "中文", direction: "ltr" };
 
-export const Languages: Array<Language> = [
+export const Languages: Language[] = [
     English,
     Spanish,
     French,
