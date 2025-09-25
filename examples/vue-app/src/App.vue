@@ -3,9 +3,6 @@
   lang="ts"
 >
 import { ref } from 'vue'
-import type { MyButtonMessage } from '@scbd/vue-components'
-
-const msg: MyButtonMessage = 'Hola'
 
 const langValues = ref({
   en: 'English value',
@@ -25,12 +22,11 @@ const timezone = "America/Montreal";
   <div
     style="width: fit-content; padding: 1rem; display: flex; flex-direction: column; gap: 1rem; align-items: center; margin: auto"
   >
-    <h1 class="bar">this is the app</h1>
+    <h1 class="bar">Example Vue App</h1>
 
-
-    <h2>My Button</h2>
-    <MyButton msg="Allo" />
-    <MyButton msg="Hello" />
+    <h2>Example Button</h2>
+    <ExampleButton msg="Allo" />
+    <ExampleButton msg="Hello" />
 
     <h2>Multi Language Input</h2>
     <MultiLanguageInput

@@ -1,5 +1,5 @@
 <script lang="ts">
-export type MyButtonMessage = 'Hello' | 'Allo' | 'Hola';
+export type ExampleButtonMessage = 'Hello' | 'Allo' | 'Hola';
 </script>
 
 <script
@@ -9,7 +9,7 @@ export type MyButtonMessage = 'Hello' | 'Allo' | 'Hola';
 import { CButton } from '@coreui/vue'
 
 const props = withDefaults(defineProps<{
-  msg?: MyButtonMessage,
+  msg?: ExampleButtonMessage,
 }>(), 
 {
   msg: 'Hello',
@@ -20,7 +20,7 @@ const props = withDefaults(defineProps<{
   <CButton
     color="primary"
     variant="outline"
-    class="d-flex align-items-center gap-[0.5rem]"
+    class="d-flex align-items-center"
   >
       <img
         src="../assets/vue.svg"
@@ -36,8 +36,9 @@ const props = withDefaults(defineProps<{
 
 <style scoped>
 .logo {
-  height: 0.75rem;
-  width: 0.75rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-right: 0.25rem;
 }
 button .logo.vite {
   display: none;

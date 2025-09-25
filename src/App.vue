@@ -4,7 +4,7 @@
   lang="ts"
 >
 import { ref } from 'vue'
-import MyButton from './components/my-button.vue'
+import ExampleButton from './components/example-button.vue'
 import MultiLanguageInput from './components/multi-language-input.vue'
 import DateInput from './components/date-input.vue'
 import DateRangeInput from './components/date-range-input.vue'
@@ -25,11 +25,11 @@ const timezone = "America/Montreal";
   <div
     style="width: fit-content; padding: 1rem; display: flex; flex-direction: column; gap: 1rem; align-items: center; margin: auto"
   >
-    <h1>this is the lib</h1>
+    <h1>Playground for Dev'ing</h1>
 
-    <h2>MyButton</h2>
-    <MyButton msg="Allo" />
-    <MyButton msg="Hello" />
+    <h2>Example Button</h2>
+    <ExampleButton msg="Allo" />
+    <ExampleButton msg="Hello" />
 
     <h2>Multi Language Input</h2>
     <MultiLanguageInput
