@@ -9,14 +9,12 @@
     "README.md",
     "LICENSE"
   ],
-  "main": "./dist/vue-components.umd.js",
-  "module": "./dist/vue-components.es.js",
+  "module": "./dist/index.es.js",
   "types": "./dist-types/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist-types/index.d.ts",
-      "import": "./dist/vue-components.es.js",
-      "require": "./dist/vue-components.umd.js"
+      "import": "./dist/index.es.js"
     },
     "./style.css": "./dist/style.css"
   },

@@ -8,18 +8,12 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'), // Your library entry point
-      name: 'VueComponents', // The global variable name in UMD builds
-      fileName: (format) => `vue-components.${format}.js`,
-      formats: ['es', 'umd'], // Output formats
+      fileName: (format) => `index.${format}.js`,
+      formats: ['es'], // Output formats
     },
     cssCodeSplit: false,
     rollupOptions: {
       external: ['vue'], // Externalize Vue
-      output: {
-        globals: {
-          vue: 'Vue', // Global variable name for Vue in UMD builds
-        },
-      },
     },
     sourcemap: true
   },
