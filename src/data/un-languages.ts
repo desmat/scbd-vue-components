@@ -1,5 +1,7 @@
+import type { Locale } from '../types/lstring';
+
 export interface Language {
-    locale: string,
+    locale: Locale,
     name: string,
     direction: "ltr" | "rtl"
 };

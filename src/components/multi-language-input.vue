@@ -60,13 +60,14 @@
   setup
   lang="ts"
 >
-import { CFormLabel, CInputGroupText, CFormTextarea, CFormInput, CInputGroup } from '@coreui/vue'
+import { CFormLabel, CInputGroupText, CFormTextarea, CFormInput, CInputGroup } from '@coreui/vue';
 import { CIcon } from '@coreui/icons-vue';
-import { computed, ref } from 'vue'
-import FormInputWrapper from './form-input-wrapper.vue'
+import { computed, ref } from 'vue';
+import FormInputWrapper from './form-input-wrapper.vue';
 import { Languages } from '../data/un-languages';
 import type { Language } from '../data/un-languages';
 import type LString from '../types/lstring';
+import type { Locale } from '../types/lstring';
 
 const props = withDefaults(defineProps<{
   id?: string,
@@ -87,7 +88,7 @@ const [model, modifiers] = defineModel<LString>();
 const computedModel = computed(() => model.value || {});
 const computedInvalid = computed(() => props.valid && Object.values(props.valid).filter(Boolean).length == 0)
 
-const modelUpdated = (locale: string, value: string) => {
+const modelUpdated = (locale: Locale, value: string) => {
   if (modifiers.trim) {
     value = value.trim();
   }
