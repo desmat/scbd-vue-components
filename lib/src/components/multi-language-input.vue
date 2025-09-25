@@ -38,24 +38,14 @@
               class="expand"
               @click="expanded = !expanded"
             >
-              <!-- <font-awesome-icon
-                v-if="expanded"
-                icon="chevron-up"
-                class="icon"
-              /> -->
               <CIcon
                 v-if="expanded"
-                :icon="cilChevronTop"
+                icon="cilChevronTop"
                 size="sm"
               />
-              <!-- <font-awesome-icon
-                v-else
-                icon="chevron-down"
-                class="icon"
-              /> -->
               <CIcon
                 v-else
-                :icon="cilChevronBottom"
+                icon="cilChevronBottom"
                 size="sm"
               />
             </CInputGroupText>
@@ -72,7 +62,6 @@
 >
 import { CFormLabel, CInputGroupText, CFormTextarea, CFormInput, CInputGroup } from '@coreui/vue'
 import { CIcon } from '@coreui/icons-vue';
-import { cilChevronBottom, cilChevronTop } from '@coreui/icons'
 import { computed, ref } from 'vue'
 import FormInputWrapper from './form-input-wrapper.vue'
 import { Languages } from '../data/un-languages';
