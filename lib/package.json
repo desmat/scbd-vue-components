@@ -22,7 +22,7 @@
     "build": "vite build && vue-tsc -p tsconfig.json",
     "prepare": "vite build && vue-tsc -p tsconfig.json",
     "prepack": "vite build && vue-tsc -p tsconfig.json",
-    "clean": "rm -rf ./dist && rm -rf ./dist-types"
+    "clean": "rm -rf ./dist ./dist-types"
   },
   "peerDependencies": {
     "@coreui/coreui": "^5.2.0",
