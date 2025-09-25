@@ -15,7 +15,7 @@
     "@coreui/icons-vue": "^2.2.0",
     "@coreui/utils": "^2.0.2",
     "@coreui/vue": "^5.4.1",
-    "@scbd/vue-components": "file:../lib",
+    "@scbd/vue-components": "file:../..",
     "vue": "^3.5.21",
     "vue-tsc": "^3.0.7"
   },
