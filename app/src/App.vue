@@ -3,9 +3,9 @@
   lang="ts"
 >
 import { ref } from 'vue'
-import { MyButton, MultiLanguageInput } from 'my-vue-library'
-import type { MyButtonMessage } from 'my-vue-library'
-import 'my-vue-library/style.css';
+import { MyButton, MultiLanguageInput } from '@scbd/vue-components'
+import type { MyButtonMessage } from '@scbd/vue-components'
+import '@scbd/vue-components/style.css';
 
 const msg: MyButtonMessage = 'Hola'
 

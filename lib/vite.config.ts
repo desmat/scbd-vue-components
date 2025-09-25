@@ -8,8 +8,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'), // Your library entry point
-      name: 'MyVueLibrary', // The global variable name in UMD builds
-      fileName: (format) => `my-vue-library.${format}.js`,
+      name: 'VueComponents', // The global variable name in UMD builds
+      fileName: (format) => `vue-components.${format}.js`,
       formats: ['es', 'umd'], // Output formats
     },
     cssCodeSplit: false,

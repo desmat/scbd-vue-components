@@ -1,17 +1,17 @@
 {
-  "name": "my-vue-library",
+  "name": "@scbd/vue-components",
   "private": false,
   "version": "0.0.1",
   "type": "module",
   "files": ["dist", "dist-types", "README.md", "LICENSE"],
-  "main": "./dist/my-vue-library.umd.js",
-  "module": "./dist/my-vue-library.es.js",
+  "main": "./dist/vue-components.umd.js",
+  "module": "./dist/vue-components.es.js",
   "types": "./dist-types/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist-types/index.d.ts",
-      "import": "./dist/my-vue-library.es.js",
-      "require": "./dist/my-vue-library.umd.js"
+      "import": "./dist/vue-components.es.js",
+      "require": "./dist/vue-components.umd.js"
     },
     "./style.css": "./dist/style.css"
   },
